@@ -37,17 +37,4 @@ min is ${min}, max is ${max}`);
 
 let userNum = prompt("Please enter one of the numbers which you entered before?");
 
-switch(userNum){
-    case arr[0]:
-        alert("It was the first number");
-        break;
-    case arr[1]:
-        alert("It was the second number");
-        break;
-    case arr[2]:
-        alert("It was the third number");
-        break;
-    default:
-        alert("Sorry, you did not enter this number!");
-        break;
-}
+alert(`It was the ${arr.indexOf(userNum) + 1} number`);
